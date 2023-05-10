@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <!-- <meta charset="utf-8"> -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- X3dom -->
+    <link rel='stylesheet' type='text/css' href='css/x3dom.css'>
+
+    <title>Lab 1 WEB3D Coca Cola</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body id="body">
+    <!-- Navugation dropdown bar: https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp -->
+    <nav id="header" class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+        <!-- Brand -->
+        <div class="logo">
+            <a class="navbar-brand" href="#">
+                <h1>1</h1>
+                <h1>oca</h1>
+                <h2>Cola</h2>
+                <h3>Journey</h3>
+                <p>Refreshing the world, one story at a time</p>
+            </a>
+        </div>
+
+        <!-- Toggler/collapsible Button -->
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+                        title="About Web 3D Applications"
+                        data-content="3D Apps is a final year and postgraduate module ...">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a id="show-models" class="nav-link">Models</a>
+                </li>
+
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open
+                    Modal</button>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Modal Header</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Some text in the modal.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </ul>
+    </nav>
+
+    <!-- Home page block element -->
+    <div id="home" class="container-fluid main_contents">
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- Carousel/Auto-sliding images: https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp -->
+                <div id="upperPreview" class="upper carousel" style="background-color: black;" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h3>First slide</h3>
+                            <div id="main_3d_image">
+                                <div id="main_text" class="col-xs-12 col-sm-4">
+                                    <div id="title_home"></div>
+                                    <div id="subtitle_home"></div>
+                                    <div id="text_home"></div>
+                                </div>
+                            </div>
+                            <!-- <img src="imageURL" alt="Name"> -->
+                        </div>
+                        <div class="carousel-item">
+                            <h3>2nd slide</h3>
+                            <!-- <img src="imageURL" alt="Name"> -->
+                        </div>
+                        <div class="carousel-item">
+                            <h3>3rd slide</h3>
+                            <!-- <img src="imageURL" alt="Name"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- First triple column -->
+        <div class="row">
+            <!-- 1st Cola -->
+            <div class="col-sm-4">
+                <div class="card">
+                    <!-- <a href="assets/images/render_images/coke.jpg" data-fancybox data-caption="My 3D coke can render" class="thumbnail"></a> -->
+                    <a href="#">
+                        <img class="card-img-top img-fluid img-thumbnail" src="assets/images/site_images/coca_cola.jpg"
+                            alt="1st Cola">
+                    </a>
+                    <div class="card-body">
+                        <div id="title_left"></div>
+                        <div id="text_left"></div>
+                        <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola" class="btn btn-primary">Find out
+                            more...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd Cola -->
+            <div class="col-sm-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top img-fluid img-thumbnail" src="assets/images/site_images/sprite.jpg"
+                            alt="2nd Cola">
+                    </a>
+                    <div class="card-body">
+                        <div id="title_centre"></div>
+                        <div id="text_centre"></div>
+                        <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite" class="btn btn-primary">Find out
+                            more...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd Cola -->
+            <div class="col-sm-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top img-fluid img-thumbnail" src="assets/images/site_images/dr_pepper.jpg"
+                            alt="3rd Cola">
+                    </a>
+                    <div class="card-body">
+                        <div id="title_right"></div>
+                        <div id="text_right"></div>
+                        <a href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper" class="btn btn-primary">Find out
+                            more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End of home page -->
+
+    <div id="about" style="display: none;">About this page</div>
+
+    <!-- Models page block element --> <!-- Lab 6 page 3x  "X3D switch node"!!!!!!!!!!!!!!!!!!!!!!!!!!!§ -->
+    <div id="models" class="container-fluid main_contents">
+        <div class="row">
+            <!-- 3D Model display part -->
+            <div class="col-sm-8">
+                <!-- card header https://getbootstrap.com/docs/4.0/components/card/ -->
+                <div class="card text-left">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a id="first-model" class="nav-link active">1st Cola</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="second-model" class="nav-link">2nd Cola</a>
+                            </li>
+                            <li class="nav-item">
+                                <!-- <a id="third-model" class="nav-link disabled">3rd Cola (disabled)</a> -->
+                                <a id="third-model" class="nav-link">3rd Cola</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <!-- Coke model -->
+                        <div id="coke-model">
+                            <div class="model3D">
+                                <x3d>
+                                    <scene>
+                                        <inline nameSpaceName="model3D" mapDEFtoID="true" onclick="animateModel();" url="assets/x3d/coke_can.x3d"></inline>
+                                    </scene>
+                                </x3d>
+                            </div>
+                        </div>
+                        <!-- Sprite model -->
+                        <div id="coke-model">
+                            <!-- -->
+                        </div>
+                        <!-- Pepper model -->
+                        <div id="coke-model">
+                            <!-- -->
+                        </div>
+
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3D Gallery part -->
+            <div class="col-sm-4">
+                <div class="card text-left">
+                    <div class="card-header gallery-header">
+                        Gallery
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">3D image Gallery</h4>
+                        <!-- Dynamically generated image gallery using JS and PHP -->
+                        <div class="gallery" id="gallery_coke"></div>
+                        <p class="card-text">3d images</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Cameras</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-subtitle">Camera Views</h5>
+                        <div class="camera-btns">
+                            <p class="card-text">These buttons select a range of X3D model viewpoints</p>
+                            <div class="btn-group btn-group-sm">
+                                <a href="#" class="btn btn-success camera-font">Front</a>
+                                <a href="#" class="btn btn-primary camera-font">Back</a>
+                                <a href="#" class="btn btn-primary camera-font">Left</a>
+                                <a href="#" class="btn btn-primary camera-font">Right</a>
+                                <a href="#" class="btn btn-primary camera-font">Top</a>
+                                <a href="#" class="btn btn-outline-dark disabled camera-font">Off</a>
+                            </div>
+                        </div>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Animation</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-subtitle">Animation Options</h5>
+                        <div class="camera-btns">
+                            <p class="card-text">These buttons select a range of X3D model viewpoints</p>
+                            <div class="btn-group btn-group-sm">
+                                <a href="#" class="btn btn-outline-light btn-responsive" onclick="spin();">RotX</a>
+                                <a href="#" class="btn btn-outline-light btn-responsive">2nd option</a>
+                                <a href="#" class="btn btn-outline-light btn-responsive">3rd option</a>
+                                <a href="#" class="btn btn-outline-dark btn-responsive" onclick="stopRotation();">Stop</a>
+                            </div>
+                        </div>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <!-- Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbardrop"
+                                    data-toggle="dropdown">
+                                    Render
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">1st option</a>
+                                    <a class="dropdown-item" href="#">2nd option</a>
+                                    <a class="dropdown-item" href="#">3rd option</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-subtitle">Render and Lighting</h5>
+                        <div class="camera-btns">
+                            <p class="card-text">These buttons select a range of X3D model viewpoints</p>
+                            <div class="btn-group btn-group-sm">
+                                <a href="#" class="btn btn-success btn-responsive">1st option</a>
+                                <a href="#" class="btn btn-outline-light btn-responsive">2nd option</a>
+                                <a href="#" class="btn btn-outline-light btn-responsive">3rd option</a>
+                                <a href="#" class="btn btn-outline-dark btn-responsive">Off</a>
+                            </div>
+                        </div>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Descriptions -->
+        <div id="first-model-description" class="row">
+            <!-- 1st Cola -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="title_left"></div> <!-- Replace with JSON -->
+                        <div id="text_left"></div>
+                        <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola" class="btn btn-primary">Find out
+                            more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="second-model-description" class="row">
+            <!-- 2nd Cola -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="title_centre"></div> <!-- Replace with JSON -->
+                        <div id="text_centre"></div>
+                        <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite" class="btn btn-primary">Find out
+                            more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="third-model-description" class="row">
+            <!-- 3rd Cola -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="title_right"></div> <!-- Replace with JSON -->
+                        <div id="text_right"></div>
+                        <a href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper" class="btn btn-primary">Find out
+                            more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End of models page -->
+
+    <br> <!-- Temporary break until we style the template -->
+    <!-- Footer -->
+    <nav id="footer" class="navbar navbar-expand-sm footer">
+        <div class="container-fluid">
+            <div class="navbar-text float-left copyright">
+                <p>
+                    <span class="align-baseline">
+                        &copy 2022/23 WEB3D Applications sm2083 |
+                        <a href="javascript:changeLook()">Restyle</a>
+                        |
+                        <a href="javascript:changeBack()">Reset</a>
+                    </span>
+                </p>
+            </div>
+            <div class="navbar-text float-right social">
+                <a href="#"><i class="fab fa-facebook-square fa-2x" style="font: size 20px;color: red;"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x" style="font: size 20px;color: green;"></i></a>
+                <a href="#"><i class="fab fa-google-plus fa-2x" style="font: size 20px;color: blue;"></i></a>
+                <a href="#"><i class="fab fa-github-square fa-2x" style="font: size 20px;color: yellow;"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- JavaScript: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="scripts/js/jquery-3.6.3.js"></script>
+    <script src="scripts/js/popper.min.js"></script>
+    <script type="text/javascript" src="scripts/js/bootstrap.js"></script>
+    <script src="scripts/js/custom.js"></script>
+
+    <!-- Include the x3dom JavaScript -->
+    <script type='text/javascript' src='scripts/js/x3dom.js'></script>
+
+    <script src="https://kit.fontawesome.com/6c3bb5f3d9.js" crossorigin="anonymous"></script>
+
+    <!-- Gallery -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="scripts/js/gallery_generator.js"></script>
+
+    <script type="text/javascript" src="scripts/js/swap_restyle.js"></script>
+
+    <script src="scripts/js/getJsonData.js"></script>
+
+    <script src="scripts/js/model_interactions.js"></script>
+</body>
+
+</html>

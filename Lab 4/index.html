@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Navugation dropdown bar: https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp -->
+    <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+        <!-- Brand -->
+        <div class="logo">
+            <a class="navbar-brand" href="#">
+                <h1>1</h1>
+                <h1>oca</h1>
+                <h2>Cola</h2>
+                <h3>Journey</h3>
+                <p>Refreshing the world, one story at a time</p>
+            </a>
+        </div>
+
+        <!-- Toggler/collapsible Button -->
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+                        title="About Web 3D Applications"
+                        data-content="3D Apps is a final year and postgraduate module ...">About</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Drinks
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">1st Cola</a>
+                        <a class="dropdown-item" href="#">2nd Cola</a>
+                        <a class="dropdown-item" href="#">3rd Cola</a>
+                    </div>
+                </li>
+
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open
+                    Modal</button>
+
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Modal Header</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Some text in the modal.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </ul>
+    </nav>
+
+    <title>Lab 1 WEB3D Coca Cola</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <script src="https://kit.fontawesome.com/6c3bb5f3d9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid main_contents">
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- Carousel/Auto-sliding images: https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp -->
+                <div id="upperPreview" class="upper carousel" style="background-color: black;" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <h3>First slide</h3>
+                            <div id="main_3d_image">
+                                <div id="main_text" class="col-xs-12 col-sm-4">
+                                    <h2>Coca Cola Great Britain</h2>
+                                    <h3>Founded by Dr John S Pemberton</h3>
+                                    <p>The Coca Cola Company is the world's leading manufacturer, marketer and
+                                        distributor of non-alcoholic
+                                        beverage concentrates and syrups, and produces nearly 400 brands.</p>
+                                </div>
+                            </div>
+                            <!-- <img src="imageURL" alt="Name"> -->
+                        </div>
+                        <div class="carousel-item">
+                            <h3>2nd slide</h3>
+                            <!-- <img src="imageURL" alt="Name"> -->
+                        </div>
+                        <div class="carousel-item">
+                            <h3>3rd slide</h3>
+                            <!-- <img src="imageURL" alt="Name"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- First triple column -->
+        <div class="row">
+            <!-- 1st Cola -->
+            <div class="col-sm-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top img-fluid img-thumbnail" src="assets/images/coca_cola.jpg"
+                            alt="1st Cola">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title">1st Cola</h3>
+                        <p class="card-text">1st text</p>
+                        <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola" class="btn btn-primary">Find out
+                            more ...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd Cola -->
+            <div class="col-sm-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top img-fluid img-thumbnail" src="assets/images/sprite.jpg" alt="2nd Cola">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title">2nd Cola</h3>
+                        <p class="card-text">2nd text</p>
+                        <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite" class="btn btn-primary">Find out more
+                            ...</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd Cola -->
+            <div class="col-sm-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top img-fluid img-thumbnail" src="assets/images/dr_pepper.jpg"
+                            alt="3rd Cola">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title">3rd Cola</h3>
+                        <p class="card-text">3rd text</p>
+                        <a href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper" class="btn btn-primary">Find out
+                            more ...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <br> <!-- Temporary break until we style the templatev-->
+    <!-- Footer -->
+    <nav class="navbar navbar-expand-sm footer">
+        <div class="container-fluid">
+            <div class="navbar-text float-left copyright">
+                <p><span class="align-baseline"></span>&copy 2022/23 WEB3D Applications sm2083</span></p>
+            </div>
+            <div class="navbar-text float-right social">
+                <a href="#"><i class="fab fa-facebook-square fa-2x" style="font: size 20px;color: red;"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x" style="font: size 20px;color: green;"></i></a>
+                <a href="#"><i class="fab fa-google-plus fa-2x" style="font: size 20px;color: blue;"></i></a>
+                <a href="#"><i class="fab fa-github-square fa-2x" style="font: size 20px;color: yellow;"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- JavaScript: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    -->
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

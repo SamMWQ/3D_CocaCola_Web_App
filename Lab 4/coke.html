@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Navugation dropdown bar: https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp -->
+    <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+        <!-- Brand -->
+        <div class="logo">
+            <a class="navbar-brand" href="#">
+                <h1>1</h1>
+                <h1>oca</h1>
+                <h2>Cola</h2>
+                <h3>Journey</h3>
+                <p>Refreshing the world, one story at a time</p>
+            </a>
+        </div>
+
+        <!-- Toggler/collapsible Button -->
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Drinks
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">1st Cola</a>
+                        <a class="dropdown-item" href="#">2nd Cola</a>
+                        <a class="dropdown-item" href="#">3rd Cola</a>
+                    </div>
+                </li>
+            </ul>
+    </nav>
+
+    <!-- X3dom -->
+    <link rel='stylesheet' type='text/css' href='css/x3dom.css'>
+    <!-- Include the x3dom JavaScript -->
+    <script type='text/javascript' src='js/x3dom.js'></script>
+
+    <title>Lab 1 WEB3D Coca Cola</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <script src="https://kit.fontawesome.com/6c3bb5f3d9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid main_contents">
+        <div class="row">
+            <div class="col-sm-10">
+                <!-- card header https://getbootstrap.com/docs/4.0/components/card/ -->
+                <div class="card text-center">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="coke.html">1st Cola</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sprite.html">2nd Cola</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="pepper.html">3rd Cola (disabled)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <!--
+                    <div id="main_3d_image">
+                        <div id="main_text" class="col-xs-12 col-sm-4">
+                            <h2>Coca Cola Great Britain</h2>
+                            <h3>Founded by Dr John S Pemberton</h3>
+                            <p>The Coca Cola Company is the world's leading manufacturer, marketer and
+                                distributor of non-alcoholic
+                                beverage concentrates and syrups, and produces nearly 400 brands.</p>
+                        </div>
+                    </div>
+                    -->
+                        <div class="model3D">
+                            <x3d>
+                                <scene>
+                                    <inline url="assets/x3d/coke_can.x3d"> </inline>
+                                </scene>
+                            </x3d>
+                        </div>
+
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                        <h5 class="card-subtitle">Camera Views</h5>
+                        <div class="camera-btns">
+                            <p class="card-text">These buttons select a range of X3D model viewpoints</p>
+                            <div class="btn-group ">
+                                <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
+                                <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
+                                <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
+                                <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
+                                <a href="#" class="btn btn-warning btn-responsive camera-font">Top</a>
+                                <a href="#" class="btn btn-outline-dark disabled btn-responsive camera-font">Off</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card text-left">
+                    <div class="card-header">
+                        3D image Gallery
+                    </div>
+                    <a href="coke.html">
+                        <img class="card-img-top img-fluid img-thumbnail" src="assets/images/coca_cola.jpg"
+                            alt="1stPic">
+                    </a>
+                    <a href="sprite.html">
+                        <img class="card-img-top img-fluid img-thumbnail" src="assets/images/sprite.jpg" alt="2ndPic">
+                    </a>
+                    <a href="pepper.html">
+                        <img class="card-img-top img-fluid img-thumbnail" src="assets/images/dr_pepper.jpg"
+                            alt="3rdPic">
+                    </a>
+                    <p class="card-text">3d images</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- First triple column -->
+        <div class="row">
+            <!-- 1st Cola -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">1st Cola</h3>
+                        <p class="card-text">1st text</p>
+                        <a href="#" class="btn btn-primary">Find out more ...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <br> <!-- Temporary break until we style the templatev-->
+    <!-- Footer -->
+    <nav class="navbar navbar-expand-sm footer">
+        <div class="container-fluid">
+            <div class="navbar-text float-left copyright">
+                <p><span class="align-baseline"></span>&copy 2022/23 WEB3D Applications sm2083</span></p>
+            </div>
+            <div class="navbar-text float-right social">
+                <a href="#"><i class="fab fa-facebook-square fa-2x" style="font: size 20px;color: red;"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x" style="font: size 20px;color: green;"></i></a>
+                <a href="#"><i class="fab fa-google-plus fa-2x" style="font: size 20px;color: blue;"></i></a>
+                <a href="#"><i class="fab fa-github-square fa-2x" style="font: size 20px;color: yellow;"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- JavaScript: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    -->
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+
+</html>
