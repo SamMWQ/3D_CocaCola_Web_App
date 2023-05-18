@@ -1,0 +1,33 @@
+{
+  "homePageText": [
+    {
+      "titleHistory": "Coca Cola Great Britain",
+      "subtitleHistory": "Founded in 1886 by pharmacist Dr John S Pemberton in Atlanta, Georgia",
+      "textHistory": "The Coca‑Cola Company is the world's leading manufacturer, marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands.",
+      "link": "http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola"
+    },
+    {
+      "link": "https://www.coca-cola.co.uk/brands/appletiser"
+    },
+    {
+      "link": "https://www.coca-cola.co.uk/brands/powerade"
+    },
+    {
+      "socialPrompt": "Join us on social platforms"
+    }
+  ],
+  "modelPageText": [
+    {
+      "titleCoke": "Coca-Cola Original Taste",
+      "textCoke": "Coca‑Cola Original Taste is the world’s favourite soft drink and has been enjoyed since 1886. You can find Coca‑Cola Original Taste in a variety of sizes to suit every lifestyle and occasion."
+    },
+    {
+      "titleAppletiser": "Appletiser",
+      "textAppletiser": "For over 50 years, Appletiser has been expertly crafting its unique blend of sparkling 100% natural apple juice. It has no added sugar, colourants, or preservatives and it is the perfect drink to accompany food or for other social occasions."
+    },
+    {
+      "titlePowerade": "Powerade",
+      "textPowerade": "Developed with sports scientists, Powerade is a still, isotonic sports drink that helps support effective hydration and carbohydrates for replenishing the energy and fluids that your body loses during exercise."
+    }
+  ]
+}
